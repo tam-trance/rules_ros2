@@ -22,8 +22,8 @@ def _vendored_repository_impl(ctx):
     # Assume vendor is at <rules_ros2_root>/../vendor
     # We construct the path string manually because ctx.path() objects are restrictive
     # We use basic string manipulation to go up one level
-    # real_rules_ros2_root is like /path/to/Perimeta_v2/rules_ros2
-    # We want /path/to/Perimeta_v2/vendor
+    # real_rules_ros2_root is like /path/to/ROS2-in-a-Box/rules_ros2
+    # We want /path/to/ROS2-in-a-Box/vendor
     
     # Find the last slash
     last_slash = real_rules_ros2_root.rfind("/")

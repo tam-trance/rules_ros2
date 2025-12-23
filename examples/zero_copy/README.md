@@ -24,7 +24,7 @@ You can run this example from the project root or as a standalone example from t
 
 **Note:** Do not run these commands from the `rules_ros2/` directory itself.
 
-### Option 1: Run from Project Root (`Perimeta_v2`)
+### Option 1: Run from Project Root (`ROS2-in-a-Box`)
 
 Run the zero-copy example with shared memory enabled:
 

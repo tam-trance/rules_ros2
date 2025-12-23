@@ -10,9 +10,26 @@ local_path_override(
 )
 
 bazel_dep(name = "rules_python", version = "0.40.0")
+local_path_override(module_name = "rules_python", path = "../../vendor/rules_python")
+
 bazel_dep(name = "rules_rust", version = "0.68.1")
+local_path_override(module_name = "rules_rust", path = "../../vendor/rules_rust")
+
 bazel_dep(name = "rules_cc", version = "0.0.17")
+local_path_override(module_name = "rules_cc", path = "../../vendor/rules_cc")
+
 bazel_dep(name = "googletest", version = "1.15.2")
+local_path_override(module_name = "googletest", path = "../../vendor/googletest")
+
+# Overrides for transitive dependencies
+local_path_override(module_name = "rules_shell", path = "../../vendor/rules_shell")
+local_path_override(module_name = "bazel_skylib", path = "../../vendor/bazel_skylib")
+local_path_override(module_name = "bazel_features", path = "../../vendor/bazel_features")
+local_path_override(module_name = "rules_license", path = "../../vendor/rules_license")
+local_path_override(module_name = "rules_foreign_cc", path = "../../vendor/rules_foreign_cc")
+
+bazel_dep(name = "rules_rust_bindgen", version = "0.68.1")
+local_path_override(module_name = "rules_rust_bindgen", path = "../../vendor/rules_rust/extensions/bindgen")
 
 # Python setup
 python = use_extension("@rules_python//python/extensions:python.bzl", "python")
