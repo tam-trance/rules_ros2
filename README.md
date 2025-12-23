@@ -120,7 +120,7 @@ This repository is based on [mvukov/rules_ros2](https://github.com/mvukov/rules_
     - Dependencies are managed via Bazel modules and extensions, ensuring forward compatibility.
 
 2.  **Submodule Integration**:
-    - Adapted to work as a subdirectory/module within a larger root workspace (`Perimeta_v2`).
+    - Adapted to work as a subdirectory/module within a larger root workspace (`ROS2-in-a-Box`).
     - Supports dual-mode execution: can be run as a standalone workspace (via `examples/`) or as an external dependency from the project root.
 
 3.  **Cross-Platform Fixes**:
