@@ -2,7 +2,7 @@
 
 # Bazel Rules for ROS 2
 
-This repository provides Bazel rules and macros to build, run, and test ROS 2 applications using C++, Python, and Rust. It eliminates the need to install ROS 2 system packages (e.g., via `apt`), offering a hermetic and reproducible build environment.
+This repository provides Bazel rules and macros to build, run, and test ROS 2 applications using C++, Python, and Rust. It eliminates the need to install ROS 2 system packages (e.g., via `apt` or building from source), offering a hermetic and reproducible build environment.
 
 ## Features
 
@@ -24,7 +24,7 @@ This repository provides Bazel rules and macros to build, run, and test ROS 2 ap
 
 ## Prerequisites
 
-- **Bazel**: [Install Bazel](https://bazel.build/install) (Version 7.0+ recommended).
+- **Bazel**: Install bazel via `brew install bazelisk` (yep, bazelisk. [learn more here](https://bazel.build/install)) (Version 8.0+ required, as this has is MODULE / bzlmod based and not WORKSPACE based).
 - **Python**: Python 3.10+ installed on your system.
 - **C++ Compiler**: Clang (recommended) or GCC.
 - **OS**:
